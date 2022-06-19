@@ -1,0 +1,424 @@
+body{
+    background-color: black;
+    padding:0;
+    margin:0;
+    display:block;
+    z-index:-1;
+}
+.naslov{
+    position:absolute;
+    left:50%;
+    cursor:pointer;
+    font-family:arial;
+    font-size:20px;
+    width:150px;
+    height:0px;
+    background-color:rgb(109, 107, 107);
+    transition:0.5s;
+}
+.naslov::after{
+    content:"";
+}
+.naslov:hover::after{
+    content:"KOMŠIJA BRKA";
+    vertical-align: bottom;
+    color:crimson;
+    transition:1s;
+}
+.naslov:hover{
+    width:150px;
+    height:20%;
+    border-radius:10px;
+    background-color:rgb(109, 107, 107);
+    z-index:2;
+    transition:1s;
+}
+.banner{
+    background-color:darkorange;
+    position:absolute;
+    height: 10%;
+    width:100%;
+    z-index: -1;
+    padding:0;
+}
+.hub{
+    color:darkorange;
+    background-color:black;
+    border-radius:10px;
+}
+.hamburger{
+    padding:0;
+    position:absolute;
+    left:95%;
+    cursor:pointer;
+}
+#linija1{
+    padding:0;
+    top:5%;
+    transition:0.1s;
+}
+#linija2{
+    padding:0;
+    top:7.5%;
+    transition:0.1s;
+}
+#linija3{
+    padding:0;
+    top:10%;
+    transition:0.1s;
+}
+#linija1.iks{
+    position:absolute;
+    transform:rotate(45deg);
+    top:0.7cm;
+    left:97.5;
+    transition:0.1s;
+}
+#linija2.iks{
+    position:absolute;
+    display:none;
+    top:5%;
+    transition:0.1s;
+}
+#linija3.iks{
+    position:absolute;
+    transform:rotate(-45deg);
+    top:0.7cm;
+    transition:0.1s;
+}
+.meniSadrzaj{
+    position:absolute;
+    top:20%;
+    right:0;
+    width:0;
+    height:0;
+    background-color:rgb(109, 107, 107);
+    transition:0.1s;
+}
+#prijava{
+    position:absolute;
+    visibility: hidden;
+    font-size:x-large;
+    top:15%;
+    right:3%;
+    color:darkorange;
+    padding:0;
+}
+#registracija{
+    position:absolute;
+    visibility: hidden;
+    font-size: x-large;
+    top:25%;
+    right:3%;
+    color:darkorange;
+    padding:0;
+}
+#odjava{
+    position:absolute;
+    visibility: hidden;
+    font-size:x-large;
+    top:35%;
+    right:3%;
+    color:darkorange;
+    padding:0;
+}
+.meniSadrzaj.iks{
+    position:absolute;
+    top:10%;
+    right:0;
+    width:200px;
+    height:500px;
+    border-radius:5px;
+    background-color:rgb(109, 107, 107);
+    padding:1%;
+    z-index:-3;
+    transition:0.1s;
+}
+#prijava.iks{
+    position:absolute;
+    visibility: visible;
+    top:15%;
+    right:3%;
+    color:darkorange;
+    padding:0;
+    z-index:4;
+    transition:0.1s;
+    cursor:pointer;
+}
+#registracija.iks{
+    position:absolute;
+    visibility: visible;
+    color:darkorange;
+    top:25%;
+    right:3%;
+    padding:0;
+    transition:0.1s;
+    cursor:pointer;
+}
+#odjava.iks{
+    position:absolute;
+    visibility: visible;
+    font-size:x-large;
+    top:35%;
+    right:3%;
+    color:darkorange;
+    padding:0;
+    cursor:pointer;
+}
+.registracijaGlavna{
+    visibility:hidden;
+    height:80%;
+    left:40%;
+    top:10%;
+    width:25%;
+    position:absolute;
+    border-radius: 5px;
+    background-color:rgb(109, 107, 107);
+
+}
+.registracijaGlavna.registracija{
+    visibility:visible;
+    height:80%;
+    left:40%;
+    top:10%;
+    width:25%;
+    position:absolute;
+    border-radius: 5px;
+    background-color:rgb(109, 107, 107);
+    transition:0.3s;
+
+}
+#ime{
+    top:10%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#prezime{
+    top:15%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#mail{
+    top:20%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#username{
+    top:25%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#lozinka{
+    top:30%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#lozinka2{
+    top:35%;
+    left:30%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#submit{
+    top:45%;
+    left:30%;
+    position:absolute;
+    border-radius:15px;
+    border-color:chocolate;
+    background-color:darkorange;
+    font-size: larger;
+    cursor:pointer;
+    color:navy;
+    font-weight: bold;
+}
+.prijavaGlavna{
+    visibility: hidden;
+    height:50%;
+    left:40%;
+    top:10%;
+    width:20%;
+    position:absolute;
+    border-radius: 5px;
+    background-color:rgb(109, 107, 107);
+}
+.prijavaGlavna.prijavaAktivno{
+    visibility: visible;
+    height:50%;
+    left:40%;
+    top:10%;
+    width:20%;
+    position:absolute;
+    border-radius: 5px;
+    background-color:rgb(109, 107, 107);
+}
+#usernamelog{
+    top:25%;
+    left:20%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#lozinkalog{
+    top:40%;
+    left:20%;
+    position:absolute;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+#submitlog{
+    top:55%;
+    left:20%;
+    position:absolute;
+    border-radius:15px;
+    border-color:chocolate;
+    background-color:darkorange;
+    font-size: larger;
+    cursor:pointer;
+    color:navy;
+    font-weight: bold;
+}
+#kime{
+    position:absolute;
+    top:1%;
+    left:5%;
+    font-family: arial;
+    color:black;
+    z-index:5;
+    font-size:larger;
+    font-weight: bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+.add{
+    position:absolute;
+    top:80%;
+    left:90%;
+    background-color:darkorange;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    z-index:3;
+    border:3px solid chocolate;
+    cursor:pointer;
+
+}
+.add:hover{
+    animation: animacijaskok 0.5s 0.1s forwards;
+
+}
+#plus1{
+    top:40%;
+    position:relative;
+}
+#plus2{
+    top:25%;
+    position:relative;
+    transform:rotate(90deg);
+}
+@keyframes animacijaskok{
+    0%{
+        top:80%;
+    }
+    50%{
+        top:78%;
+    }
+    100%{
+        top:80%;
+    }
+}
+.objavi{
+    visibility: hidden;
+    position:absolute;
+    top:10%;
+    left:20%;
+    height:90%;
+    width:50%;
+    background-color:darkgray;
+    border-radius:20px;
+}
+.objavi.objavljivanjeAktivno{
+    visibility:visible;
+}
+#input{
+    position:relative;
+    top:10%;
+    left:5%;
+    background-color:darkorange;
+    font-size:x-large;
+    font-family:arial;
+    font-weight:bold;
+    border-radius:15px;
+    border: 5px solid chocolate;
+    cursor:pointer;
+    transition:0.3s;
+}
+#input:hover{
+    border: 5px solid orange;
+    cursor:pointer;
+    transition:0.3s;
+}
+#input1{
+    display:none;
+}
+#objavisliku
+{
+    position:absolute;
+    top:7%;
+    left:85%;
+    font-size:xx-large;
+    color:darkorange;
+    background-color: black;
+    border: 5px solid darkorange;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+#objavisliku:hover
+{
+    border: 5px solid orange;
+    transition:0.3s;
+}
+
