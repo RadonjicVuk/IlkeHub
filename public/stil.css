@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color:black;
     padding:0;
     margin:0;
     display:block;
@@ -144,6 +144,7 @@ body{
     z-index:4;
     transition:0.1s;
     cursor:pointer;
+    transition:0.1s;
 }
 #registracija.iks{
     position:absolute;
@@ -154,6 +155,7 @@ body{
     padding:0;
     transition:0.1s;
     cursor:pointer;
+    transition:0.1s;
 }
 #odjava.iks{
     position:absolute;
@@ -164,13 +166,27 @@ body{
     color:darkorange;
     padding:0;
     cursor:pointer;
+    transition:0.1s;
+}
+#prijava.iks:hover{
+    background-color:darkslategray;
+    transition:0.1s;
+}
+#registracija.iks:hover{
+    background-color:darkslategray;
+    transition:0.1s;
+}
+#odjava.iks:hover{
+    background-color:darkslategray;
+    transition:0.1s;
+    width:100%;
 }
 .registracijaGlavna{
     visibility:hidden;
-    height:80%;
+    height: 80%;
     left:40%;
     top:10%;
-    width:25%;
+    width:50%;
     position:absolute;
     border-radius: 5px;
     background-color:rgb(109, 107, 107);
@@ -198,6 +214,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #prezime{
     top:15%;
@@ -209,6 +226,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #mail{
     top:20%;
@@ -220,6 +238,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #username{
     top:25%;
@@ -231,6 +250,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #lozinka{
     top:30%;
@@ -242,6 +262,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #lozinka2{
     top:35%;
@@ -253,6 +274,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #submit{
     top:45%;
@@ -265,6 +287,7 @@ body{
     cursor:pointer;
     color:navy;
     font-weight: bold;
+    width:50%;
 }
 .prijavaGlavna{
     visibility: hidden;
@@ -296,6 +319,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #lozinkalog{
     top:40%;
@@ -307,6 +331,7 @@ body{
     border:none;
     border-radius:5px;
     cursor:pointer;
+    width:50%;
 }
 #submitlog{
     top:55%;
@@ -420,5 +445,160 @@ body{
 {
     border: 5px solid orange;
     transition:0.3s;
+}
+@media (max-width:950px){
+    .banner{
+        width:120%;
+    }
+    .meniSadrzaj.iks{
+        position:absolute;
+        top:10%;
+        right:0;
+        width:200px;
+        height:500px;
+        border-radius:5px;
+        background-color:rgb(109, 107, 107);
+        padding:1%;
+        z-index:-3;
+        transition:0.1s;
+    }
+    #prijava.iks{
+        position:absolute;
+        visibility: visible;
+        top:15%;
+        right:3%;
+        color:darkorange;
+        padding:0;
+        z-index:4;
+        transition:0.1s;
+        cursor:pointer;
+        transition:0.1s;
+    }
+    #registracija.iks{
+        position:absolute;
+        visibility: visible;
+        color:darkorange;
+        top:25%;
+        right:3%;
+        padding:0;
+        transition:0.1s;
+        cursor:pointer;
+        transition:0.1s;
+    }
+    #odjava.iks{
+        position:absolute;
+        visibility: visible;
+        font-size:x-large;
+        top:35%;
+        right:3%;
+        color:darkorange;
+        padding:0;
+        cursor:pointer;
+        transition:0.1s;
+    }
+    .registracijaGlavna.registracija{
+        width:60%;
+    }
+    .prijavaGlavna.prijavaAktivno{
+        visibility: visible;
+        height:50%;
+        left:40%;
+        top:10%;
+        width:60%;
+        position:absolute;
+        border-radius: 5px;
+        background-color:rgb(109, 107, 107);
+    }
+    #usernamelog{
+        top:25%;
+        left:20%;
+        position:absolute;
+        background-color:darkgray;
+        color:black;
+        font-size: larger;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        width:45%;
+    }
+    #lozinkalog{
+        top:40%;
+        left:20%;
+        position:absolute;
+        background-color:darkgray;
+        color:black;
+        font-size: larger;
+        border:none;
+        width:45%;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    #submitlog{
+        top:55%;
+        left:20%;
+        position:absolute;
+        border-radius:15px;
+        border-color:chocolate;
+        background-color:darkorange;
+        font-size: larger;
+        cursor:pointer;
+        width:50%;
+        color:navy;
+        font-weight: bold;
+    }
+    #kime{
+        position:absolute;
+        top:1%;
+        left:5%;
+        font-family: arial;
+        color:black;
+        z-index:5;
+        font-size:larger;
+        font-weight: bold;
+        cursor:pointer;
+        width:30%;
+        transition:0.2s;
+    }
+    .add{
+        position:absolute;
+        top:100%;
+        left:90%;
+        background-color:darkorange;
+        width:100px;
+        height:100px;
+        border-radius:100%;
+        z-index:3;
+        border:3px solid chocolate;
+        cursor:pointer;
+    
+    }
+    #ime{
+        width:60%;
+        left:15%;
+    }
+    #prezime{
+        width:60%;
+        left:15%;
+    }
+    #mail{
+        width:60%;
+        left:15%;
+    }
+    #username{
+        width:60%;
+        left:15%;
+    }
+    #lozinka{
+        width:60%;
+        left:15%;
+    }
+    #lozinka2{
+        width:60%;
+        left:15%;
+    }
+    #submit{
+        width:50%;
+        left:15%;
+    }
 }
 
