@@ -189,7 +189,7 @@ body{
     width:50%;
     position:absolute;
     border-radius: 5px;
-    background-color:rgb(109, 107, 107);
+    background-image:linear-gradient(to right, darkgray ,rgb(114, 111, 111));
 
 }
 .registracijaGlavna.registracija{
@@ -200,7 +200,7 @@ body{
     width:25%;
     position:absolute;
     border-radius: 5px;
-    background-color:rgb(109, 107, 107);
+    background-image:linear-gradient(to right, darkgray ,rgb(114, 111, 111));
     transition:0.3s;
 
 }
@@ -297,41 +297,38 @@ body{
     width:20%;
     position:absolute;
     border-radius: 5px;
-    background-color:rgb(109, 107, 107);
+    background-image:linear-gradient(to right, darkgray ,rgb(114, 111, 111));
 }
 .prijavaGlavna.prijavaAktivno{
     visibility: visible;
-    height:50%;
-    left:40%;
-    top:10%;
-    width:20%;
-    position:absolute;
-    border-radius: 5px;
-    background-color:rgb(109, 107, 107);
 }
 #usernamelog{
     top:25%;
     left:20%;
     position:absolute;
-    background-color:darkgray;
+    background-image:linear-gradient(to right, rgb(168, 168, 168) ,rgb(114, 111, 111));
     color:black;
     font-size: larger;
     border:none;
     border-radius:5px;
     cursor:pointer;
     width:50%;
+    border-bottom-color:black;
+    border-bottom-width: 3px;
 }
 #lozinkalog{
     top:40%;
     left:20%;
     position:absolute;
-    background-color:darkgray;
+    background-image:linear-gradient(to right, rgb(168, 168, 168) ,rgb(114, 111, 111));
     color:black;
     font-size: larger;
     border:none;
     border-radius:5px;
     cursor:pointer;
     width:50%;
+    border-bottom-width: 3px;
+    border-bottom-color:black;
 }
 #submitlog{
     top:55%;
@@ -401,7 +398,7 @@ body{
     left:20%;
     height:90%;
     width:50%;
-    background-color:darkgray;
+    background-image:linear-gradient(to right, darkgray ,rgb(114, 111, 111));
     border-radius:20px;
 }
 .objavi.objavljivanjeAktivno{
@@ -433,10 +430,12 @@ body{
     position:absolute;
     top:7%;
     left:85%;
-    font-size:xx-large;
-    color:darkorange;
-    background-color: black;
-    border: 5px solid darkorange;
+    font-family: arial;
+    font-size:x-large;
+    color:black;
+    font-weight:bold;
+    background-color:darkorange;
+    border: 5px solid chocolate;
     border-radius:10px;
     cursor:pointer;
     transition:0.3s;
@@ -599,6 +598,36 @@ body{
     #submit{
         width:50%;
         left:15%;
+    }
+    .objavi{
+        height:90%;
+        width:80%;
+    }
+    .objavi.objavljivanjeAktivno{
+        visibility:visible;
+    }
+    #input{
+        top:10%;
+        left:5%;
+    }
+    #input:hover{
+        border: 5px solid orange;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    #input1{
+        display:none;
+    }
+    #objavisliku
+    {
+        position:absolute;
+        top:%;
+        left:5%;
+    }
+    #objavisliku:hover
+    {
+        border: 5px solid orange;
+        transition:0.3s;
     }
 }
 
