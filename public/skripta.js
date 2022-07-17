@@ -1,22 +1,16 @@
 var l=true;
-function hamburgerMeni(){
+function hamburgerMeni()
+{
     var meni=document.getElementById("meni");
     var linija1= document.getElementById("linija1");
     var linija2= document.getElementById("linija2");
     var linija3= document.getElementById("linija3");
     var meniSadrzaj= document.getElementById("meniSadr");
-    var prijava= document.getElementById("prijava");
-    var registracija= document.getElementById("registracija");
-    var odjavise= document.getElementById("odjava");
     l=!l;
-        meni.classList.toggle("iks");
         linija1.classList.toggle("iks");
         linija2.classList.toggle("iks");
         linija3.classList.toggle("iks");
         meniSadrzaj.classList.toggle("iks");
-        prijava.classList.toggle("iks");
-        registracija.classList.toggle("iks");
-        odjavise.classList.toggle("iks");
    
 }
 function registrujse()
@@ -24,7 +18,11 @@ function registrujse()
     var registracija=document.getElementById("glavnireg");
     registracija.classList.toggle("registracija");
     var prijava = document.getElementById("prijavaGla");
-    hamburgerMeni();
+    var hamburger=document.getElementById("meniSadr");
+    if(hamburger.classList.contains("iks"))
+    {
+        hamburgerMeni();
+    }
     if(prijava.classList.contains("prijavaAktivno"))
     {
         prijava.classList.toggle("prijavaAktivno");
@@ -77,5 +75,18 @@ function dodaj()
     else
     {
         alert("Morate se prijaviti prvo");
+    }
+}
+function zatvaraj()
+{
+    var prijava = document.getElementById("prijavaGla");
+    if(prijava.classList.contains("prijavaAktivno"))
+    {
+    prijava.classList.toggle("prijavaAktivno");
+    }
+    var registracija=document.getElementById("glavnireg");
+    if(registracija.classList.contains("registracija"))
+    {
+    registracija.classList.toggle("registracija");
     }
 }
