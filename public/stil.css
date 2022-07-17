@@ -397,7 +397,6 @@ body{
     border-radius:15px;
     border: 5px solid chocolate;
     cursor:pointer;
-    transition:0.3s;
 }
 #input:hover{
     border: 5px solid orange;
@@ -420,7 +419,6 @@ body{
     border: 5px solid chocolate;
     border-radius:10px;
     cursor:pointer;
-    transition:0.3s;
 }
 #objavisliku:hover
 {
