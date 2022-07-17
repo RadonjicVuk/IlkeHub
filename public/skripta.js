@@ -90,3 +90,12 @@ function zatvaraj()
     registracija.classList.toggle("registracija");
     }
 }
+function slikaPrikaz()
+{
+    var img = document.createElement("img");
+    var prikaz=document.getElementById("slikapre");
+    console.log(document.getElementById("input1").value);
+    img.src=document.getElementById("input1").value;
+    prikaz.appendChild(img);
+
+} 

@@ -427,6 +427,11 @@ body{
     border: 5px solid orange;
     transition:0.3s;
 }
+#slikapre{
+    position:absolute;
+    top:15%;
+    left:5%;
+}
 @media (max-width:950px){
     .banner{
         width:120%;
