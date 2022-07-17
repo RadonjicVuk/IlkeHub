@@ -99,3 +99,15 @@ function slikaPrikaz()
     prikaz.appendChild(img);
 
 } 
+function prikaz() {
+    var file = document.getElementById("input1").files;
+    if (file.length > 0) {
+        var fileReader = new FileReader();
+
+        fileReader.onload = function (event) {
+            document.getElementById("slikapre").setAttribute("src", event.target.result);
+        };
+
+        fileReader.readAsDataURL(file[0]);
+    }
+}

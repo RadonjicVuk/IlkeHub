@@ -431,6 +431,8 @@ body{
     position:absolute;
     top:15%;
     left:5%;
+    max-width: 50%;
+    max-height: 50%;
 }
 @media (max-width:950px){
     .banner{
