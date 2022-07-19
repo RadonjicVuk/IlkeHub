@@ -111,3 +111,12 @@ function prikaz() {
         fileReader.readAsDataURL(file[0]);
     }
 }
+function objaviSliku()
+{
+    var slika=document.getElementById("slikapre");
+    var img= document.createElement("img");
+    img.src=slika.src;
+    //img.classList.add("objavljenaSlika");
+    document.getElementById("slikee").appendChild(img);
+    dodaj();
+}
