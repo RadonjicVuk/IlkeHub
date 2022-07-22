@@ -130,7 +130,7 @@ function pretraga()
     var i;
     for(i=0;i<slike.length;i++)
     {
-        if(!slike[i].id.includes(tekst.value))
+        if(!slike[i].id.toLowerCase().includes(tekst.value.toLowerCase()))
         {
             slike[i].style.display="none";
         }
