@@ -121,4 +121,22 @@ function objaviSliku()
     //img.classList.add("objavljenaSlika");
     document.getElementById("slikee").appendChild(img);
     dodaj();
+    idd.value="";
+}
+function pretraga()
+{
+    var slike=document.getElementsByTagName("img");
+    var tekst = document.getElementById("pretraga");
+    var i;
+    for(i=0;i<slike.length;i++)
+    {
+        if(!slike[i].id.includes(tekst.value))
+        {
+            slike[i].style.display="none";
+        }
+        else
+        {
+            slike[i].style.display="";
+        }
+    }
 }
