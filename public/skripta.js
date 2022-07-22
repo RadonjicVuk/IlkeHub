@@ -115,7 +115,9 @@ function objaviSliku()
 {
     var slika=document.getElementById("slikapre");
     var img= document.createElement("img");
+    var idd= document.getElementById("naslov");
     img.src=slika.src;
+    img.id=idd.value;
     //img.classList.add("objavljenaSlika");
     document.getElementById("slikee").appendChild(img);
     dodaj();

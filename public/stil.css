@@ -426,6 +426,26 @@ body{
     border: 5px solid orange;
     transition:0.3s;
 }
+#naslov{
+    position: absolute;
+    top:70%;
+    left:20%;
+    border:none;
+    background-color:gray;
+    color:black;
+    border-radius:15px;
+    width:50%;
+    height:10%;
+    resize:none;
+    font-size:20px;
+}
+#naslov::placeholder{
+    color:black;
+    font-family: arial;
+    font-weight:bold;
+    font-size: large;
+    resize:none;
+}
 #slikapre{
     position:absolute;
     top:15%;
