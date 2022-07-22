@@ -683,3 +683,6 @@ img{
     color:darkorange;
     cursor:pointer;
 }
+div.objavljeneslike{
+    background-color:gray;
+}

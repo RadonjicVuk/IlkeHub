@@ -140,3 +140,23 @@ function pretraga()
         }
     }
 }
+function objaviSliku2()
+{
+    var slika=document.getElementById("slikapre");
+    var img= document.createElement("img");
+    var idd= document.getElementById("naslov");
+    var div= document.createElement("div");
+    var p = document.createElement("p");
+    var sadrzaj=document.createTextNode(idd.value);
+    img.src=slika.src;
+    img.id=idd.value;
+    div.className=idd.value;
+    div.classList.add("objavljeneslike");
+    //img.classList.add("objavljenaSlika");
+    document.getElementById("slikee").appendChild(div);
+    div.appendChild(img);
+    div.appendChild(p);
+    p.appendChild(sadrzaj);
+    dodaj();
+    idd.value="";
+}
