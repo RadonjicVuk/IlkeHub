@@ -152,6 +152,7 @@ function objaviSliku2()
     img.src=slika.src;
     div.id=idd.value;
     div.className=idd.value;
+    p.className="paragrafsaslikom";
     div.classList.add("objavljeneslike");
     //img.classList.add("objavljenaSlika");
     document.getElementById("slikee").appendChild(div);

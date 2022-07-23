@@ -685,4 +685,19 @@ img{
 }
 div.objavljeneslike{
     background-color:gray;
+    border-radius:15px;
+    width:90%;
+}
+p.paragrafsaslikom{
+    position: relative;
+    left: 50%;
+    font-family: arial;
+    font-size:medium;
+    font-weight:bold;
+
+}
+#slikee{
+    width:100%;
+    height:100%;
+    z-index:inherit;
 }
