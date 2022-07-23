@@ -127,6 +127,7 @@ function pretraga()
 {
     var slike=document.getElementsByTagName("img");
     var tekst = document.getElementById("pretraga");
+    var div = document.getElementsByClassName("objavljenaslika");
     var i;
     for(i=0;i<slike.length;i++)
     {
@@ -149,7 +150,7 @@ function objaviSliku2()
     var p = document.createElement("p");
     var sadrzaj=document.createTextNode(idd.value);
     img.src=slika.src;
-    img.id=idd.value;
+    div.id=idd.value;
     div.className=idd.value;
     div.classList.add("objavljeneslike");
     //img.classList.add("objavljenaSlika");
@@ -159,4 +160,22 @@ function objaviSliku2()
     p.appendChild(sadrzaj);
     dodaj();
     idd.value="";
+}
+function pretraga2()
+{
+    //var slike=document.getElementsByTagName("div");
+    var tekst = document.getElementById("pretraga");
+    var div = document.getElementsByClassName("objavljeneslike");
+    var i;
+    for(i=0;i<div.length;i++)
+    {
+        if(!div[i].id.toLowerCase().includes(tekst.value.toLowerCase()))
+        {
+            div[i].style.display="none";
+        }
+        else
+        {
+            div[i].style.display="";
+        }
+    }
 }
